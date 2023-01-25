@@ -1,2 +1,2 @@
 # denperidge-redpencil.github.io
-A meta repository for me to keep track of what I have to do and also what I have done and other stuff
+Currently empty, mainly used to change denperidge-redpencil.github.io to redpencil.denperidge.com
