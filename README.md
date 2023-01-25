@@ -5,7 +5,7 @@ Want to see my non-work stuff? See [denperidge.com](https://denperidge.com)!
 
 ## Project
 - [divio-docs-gen](https://github.com/Denperidge-Redpencil/divio-docs-gen): Parse divio-style documentation in repositories into a unified output.
-- [rarwe-backend]([https://github.com/Denperidge-Redpencil/rarwe-backend](https://github.com/Denperidge-Redpencil/rarwe-backend)): a back-end for Rock & Roll with Ember.js, made using mu-semtech.
+- [rarwe-backend](https://github.com/Denperidge-Redpencil/rarwe-backend/): a back-end for Rock & Roll with Ember.js, made using mu-semtech.
 - Matrix stuff:
   - [Matrix-Bot-Starter](https://github.com/Denperidge-Redpencil/Matrix-Bot-Starter): Helper functions for quickstarting a matrix bot
   - [Mermatrix](https://github.com/Denperidge-Redpencil/Mermatrix): A Matrix bot that renders Mermaid.js codeblocks
