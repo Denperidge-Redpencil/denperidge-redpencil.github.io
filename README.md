@@ -1,7 +1,7 @@
 # Denperidge @ Redpencil.io
 
 Hi! Here's a list of some of the things I've made at Redpencil and links to them and stuff.
-Want to see my non-work stuff? See [denperidge.com](https://denperidge.com]!
+Want to see my non-work stuff? See [denperidge.com](https://denperidge.com)!
 
 ## Project
 - [divio-docs-gen](https://github.com/Denperidge-Redpencil/divio-docs-gen): Parse divio-style documentation in repositories into a unified output.
