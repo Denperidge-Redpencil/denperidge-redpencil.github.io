@@ -2,9 +2,9 @@
 title: 'Learning.md: Notes from Rock And Roll With Ember Octane'
 date: 2022-12-01 13:14:59
 updated: 2023-01-02 13:23:02
+categories:
+    - Shadow Realm (archive)
 tags:
-    - Learning.md
-    - Notes
     - Ember.js
     - Javascript
 ---

@@ -2,10 +2,10 @@
 title: 'Learning.md: Notes from learning to work with the Semantic.Works stack'
 date: 2023-01-03 13:24:13
 updated: 2023-01-05 15:27:37
+categories:
+    - Shadow Realm (archive)
 tags:
-  - Learning.md
-  - Notes
-  - Semantic.Works
+    - Semantic.Works
 ---
 
 # Semantic.works

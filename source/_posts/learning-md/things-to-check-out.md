@@ -2,9 +2,10 @@
 title: 'Learning.md: Things to check out'
 date: 2023-01-09 06:58:28
 updated: 2023-01-10 17:34:49
+categories:
+    - Shadow Realm (archive)
 tags:
-    - Learning.md
-    - Notes
+    - Research
 ---
 
 # Things to check out

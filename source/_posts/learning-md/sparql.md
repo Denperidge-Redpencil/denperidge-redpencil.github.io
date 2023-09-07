@@ -2,9 +2,10 @@
 title: 'Learning.md: Notes from the SPARQL youtube series by Wouter Beek'
 date: 2022-11-30 14:02:24
 updated: 2023-01-04 21:23:06
+categories:
+    - Shadow Realm (archive)
 tags:
-  - Learning.md
-  - Shadow realm
+    - SPARQL
 ---
 
 # SPARQL

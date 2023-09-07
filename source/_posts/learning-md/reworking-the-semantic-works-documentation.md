@@ -2,9 +2,9 @@
 title: 'Learning.md: Reworking the semantic.works documentation'
 date: 2023-01-19 15:55:37
 updated: 2023-01-24 10:21:04
+categories:
+    - Shadow Realm (archive)
 tags:
-    - Learning.md
-    - Notes
     - Documentation
 ---
 

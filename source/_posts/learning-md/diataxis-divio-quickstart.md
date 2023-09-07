@@ -2,9 +2,9 @@
 title: 'Learning.md: diataxis divio quickstart'
 date: 2023-01-02 16:57:43
 updated: 2023-01-24 10:21:04
+categories:
+    - Shadow Realm (archive)
 tags:
-    - Learning.md
-    - Notes
     - Documentation
 ---
 

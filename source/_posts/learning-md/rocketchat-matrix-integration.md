@@ -2,10 +2,11 @@
 title: 'Learning.md: Integrating Rocketchat & Matrix'
 date: 2023-01-09 06:58:28
 updated: 2023-07-04 14:28:25
+categories:
+    - Shadow Realm (archive)
 tags:
-  - Learning.md
-  - Notes
-  - Chat clients
+    - Research
+    - Chat clients
 ---
 
 # Rocketchat - Matrix bridge
