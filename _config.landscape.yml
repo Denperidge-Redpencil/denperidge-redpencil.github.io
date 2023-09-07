@@ -1,0 +1,30 @@
+menu:
+  Home: /
+  Posts: /chronological-order
+  Archives: /the-archives-the-archives-the-archives
+rss: /atom.xml
+banner: ../assets/salty_mountains.png
+
+# Content
+excerpt_link: Read More
+fancybox: true
+recent_posts_limits: 5
+
+# Sidebar
+sidebar: left
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# Miscellaneous
+favicon: /favicon.png
+
+# Header links
+# Each name must correspond to the icon name of Fork Awesome
+# https://forkaweso.me/Fork-Awesome/icons/
+links:
+  github: https://github.com/Denperidge-Redpencil
+  external-link: https://denperidge.com
