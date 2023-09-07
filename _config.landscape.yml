@@ -1,6 +1,6 @@
 menu:
   Home: /
-  Posts: /chronological-order
+  Posts: /chronological-ordering
   Archives: /the-archives-the-archives-the-archives
 rss: /atom.xml
 banner: ../assets/salty_mountains.png
@@ -8,19 +8,19 @@ banner: ../assets/salty_mountains.png
 # Content
 excerpt_link: Read More
 fancybox: true
-recent_posts_limits: 5
+recent_posts_limits: 4
 
 # Sidebar
 sidebar: left
 widgets:
 - category
 - tag
-- tagcloud
-- archive
 - recent_posts
+- archive
+- tagcloud
 
 # Miscellaneous
-favicon: /favicon.png
+favicon: /assets/Dendy.jpg
 
 # Header links
 # Each name must correspond to the icon name of Fork Awesome
