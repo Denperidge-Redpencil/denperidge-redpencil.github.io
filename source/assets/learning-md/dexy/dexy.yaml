@@ -1,0 +1,16 @@
+foo.md|jinja:
+
+  - assets
+
+assets:
+  - .js|pyg4md|lines
+
+#foo.md|jinja|markdown:
+ # - mu-search/web.rb|pyg
+  #- output: True
+  #- title: "User Guide"
+  
+
+#sources:
+ # - .rb|pyg
+  

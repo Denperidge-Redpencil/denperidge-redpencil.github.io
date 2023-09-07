@@ -105,7 +105,7 @@ There's also activate (fires when new route entered, but not when the model chan
 
 ### Data down actions up
 The best explanation is this diagram created by [Andy del Valle](https://medium.com/swlh/understanding-information-flow-in-react-data-down-action-up-b6c792a8b010)!
-![The actions-up-data-down diagram created by Andy del Valle](assets/learning-md/actions-up-data-down-Andy-del-Valle.webp)
+![The actions-up-data-down diagram created by Andy del Valle](/assets/learning-md/actions-up-data-down-Andy-del-Valle.webp)
 
 ### Testing
 Okay this is a bit funky town.

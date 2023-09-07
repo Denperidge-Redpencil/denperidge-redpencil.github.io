@@ -7,7 +7,6 @@ categories:
 tags:
     - Documentation
 ---
-
 # Documentation
 
 I love documentation. But also, documentation is the worst. Making documentation is hard. [Making great documentation](diataxis-divio-quickstart.md) even harder. But it is instrumental to helping your code be useful to people that aren't you, and that's a worthwhile pursuit! Even if you're making things just for yourself, the `people that aren't you` descriptor also includes you in a few years/months/weeks, who has no idea what you were even thinking.
@@ -30,11 +29,16 @@ But ruh roh, did you read the first two letters of that name? A lock-in to a pro
 How about the general purpose ones?
 Yes! There are two really cool options. First was Doxygen: a seemingly cool tool with a bunch of supported languages! But a few of our common ones are missing, so I feel like a fool.
 
-Then Dexy. You can see the remains of my tests with it (including Dockerising it) in [Scripts/docs/dexy/](../Scripts/dexy/). But to give you the gist: it is a super extendible and really cool amalgemation of text processing, bundled into a pretty easily configurable yaml. Jinja, pandoc and markdown are but a few of the [impressive list of built-in tools](https://dexy.github.io/dexy-user-guide/#_filter_documentation). Sadly, while it can run a bunch of languages and grab the output, it seems to lack the ability to dissect the code you give it in any meaningful ways. This bundled with a website that is split across domains and a lack of updates in the last few years, make it sub-ideal for what I'm trying to do.
+Then Dexy. You can see the remains of my tests with it (including Dockerising it) in [the files listed here](#dexy-files). But to give you the gist: it is a super extendible and really cool amalgemation of text processing, bundled into a pretty easily configurable yaml. Jinja, pandoc and markdown are but a few of the [impressive list of built-in tools](https://dexy.github.io/dexy-user-guide/#_filter_documentation). Sadly, while it can run a bunch of languages and grab the output, it seems to lack the ability to dissect the code you give it in any meaningful ways. This bundled with a website that is split across domains and a lack of updates in the last few years, make it sub-ideal for what I'm trying to do.
 
+### Dexy files
+- [dexy.yaml](/assets/learning-md/dexy/dexy.yaml)
+- [Dockerfile](/assets/learning-md/dexy/Dockerfile)
+- [foo.md.example](/assets/learning-md/dexy/foo.md.example)
+- [iterate.md.example](/assets/learning-md/dexy/iterate.md.example)
 
 ## Updating existing documentation
-Well first I had to know which repos to update! So of course I made an [script for it](assets/learning-md/diviocheck.py).
+Well first I had to know which repos to update! So of course I made an [script for it](/assets/learning-md/diviocheck.py).
 
 ```bash
 python3 diviocheck.py
@@ -43,7 +47,7 @@ python3 diviocheck.py
 
 Returned the following:
 
-![A screenshot of diviocheck.py's output](assets/learning-md/diviocheck.png)
+![A screenshot of diviocheck.py's output](/assets/learning-md/diviocheck.png)
 
 
 ## Sidequest: documentation structuring

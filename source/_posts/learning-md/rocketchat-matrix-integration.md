@@ -40,7 +40,7 @@ I've screen recorded the footage below, but I'll summarise my findings here.
 <video width="640" height="360" src="https://github.com/Denperidge-Redpencil/Learning.md/assets/27348469/424cb716-87f3-434d-93d0-8e16582e4dac" controls></video>
 
 
-[Link for if the above footage doesn't embed](assets/learning-md/Rocketchat-Matrix-Matterbridge-v2.mp4) - [Uncompressed footage](assets/learning-md/Rocketchat-Matrix-Matterbridge-v2-uncompressed.mkv) - [First footage recording](assets/learning-md/Rocketchat-Matrix-Matterbridge-v1.webm)
+[Link for if the above footage doesn't embed](/assets/learning-md/Rocketchat-Matrix-Matterbridge-v2.mp4) - [Uncompressed footage](/assets/learning-md/Rocketchat-Matrix-Matterbridge-v2-uncompressed.mkv) - [First footage recording](/assets/learning-md/Rocketchat-Matrix-Matterbridge-v1.webm)
 
 ---
 
