@@ -9,6 +9,10 @@ banner: ../assets/salty_mountains.png
 excerpt_link: Read More
 fancybox: true
 recent_posts_limits: 4
+# Footer
+# Hacky-workaround for header
+copyright: |-
+  <style>header nav{background-color: black; padding: 0px 20px;}</style>
 
 # Sidebar
 sidebar: left
