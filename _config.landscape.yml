@@ -13,6 +13,7 @@ recent_posts_limits: 4
 # Hacky-workaround for header
 copyright: |-
   <style>header nav{background-color: black; padding: 0px 20px;}</style>
+  <script defer data-domain="redpencil.denperidge.com" src="https://plausible.denperidge.com/js/script.js"></script>
 
 # Sidebar
 sidebar: left
