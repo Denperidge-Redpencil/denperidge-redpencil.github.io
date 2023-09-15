@@ -13,8 +13,9 @@ Highly condensed notes for [the accessibility course on the w3schools website](h
 - [W3Schools' tutorial on semantic elements](https://www.w3schools.com/accessibility/accessibility_semantic_elements.php)
 - [W3Schools' tutorial on landmarks](https://www.w3schools.com/accessibility/accessibility_landmarks.php)
 - [W3Schools' tutorial on (not relying on) colours](https://www.w3schools.com/accessibility/accessibility_color_meaning.php)
-- 
-
+- [W3schools' tutorial on writing descriptive image text](https://www.w3schools.com/accessibility/accessibility_image_text.php)
+- [The Youtube video by Rob Dodson at Google, displaying the importance of headers](https://www.youtube.com/watch?v=vAAzdi1xuUY)
+- [W3Schools' tutorial on visual focus](https://www.w3schools.com/accessibility/accessibility_visual_focus.php)
 
 ## Elements
 - `section` is not related to content in `main`
@@ -23,6 +24,33 @@ Highly condensed notes for [the accessibility course on the w3schools website](h
     - Aria-label & use case example: share this page
 - `div` and `span` elements say nothing about the content. Only use these if no other option makes sense
 - `a` links should usually **not** open in a new tab or window. If it does, make the user aware of this behaviour and ensure you do it with a good reason (like highlighted [here on Adrian Roselli's blog](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html#Exceptions), which fully details why new tab/window behaviour is not advisable)
+
+## Skip link
+Allows the user to quickly go to the most important part of the page. Test it out by pressing tab on [WebAIM's website](https://webaim.org/)
+```html
+<header>
+    <a href="#main" class="skip">Skip to main content</a>
+</header>
+<main id="main">
+</main>
+
+<style>
+    .skip {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden; 
+    }
+    .skip:focus {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+</style>
+
+```
 
 ## Custom controls
 If you cannot use elements semantically (technical limitations, framework...):
@@ -71,4 +99,108 @@ While the [website for inclusive design principles](https://inclusivedesignprinc
     ![A screenshot form the wikipedia article on colour blindness. The CSS has been modified so that the distinctive blue links are decorated using a soft grey line a few pixels below it](/assets/notes/img_wikipedia_underline_improved.png)
 
 
-## Images
+## Images: decorative vs meaningful
+> Can you remove it with no impact? Then it is a decorative image.
+
+### Decorative image
+Either...
+- Set `alt=""` (note: NOT a lack of an alt attribute, specifically an empty one. Otherwise the filename may get read)
+- Set role & aria-label/aria-labelledby. Example from w3schools: 
+    > `role="img" aria-label="Private house, modern architecture. Minimalistic with a big garage."`
+- (Background image) Add the image using css background-image
+- (Font icons) Set `role="img"` & `aria-hidden="true"`
+- (Inline svg) set `aria-hidden="true"`
+
+### Meaningful image
+- Modified examples from w3schools, from worst to best:
+    4. `<img src="output-460aebd-49.svg">`
+    3. `<img src="redpencil-logo.svg">`
+    2. `<img src="redpencil-logo.svg alt="Redpencil Logo>"`
+    1. `<img src="redpencil-logo.svg" alt="Home of Redpencil">`
+
+### Writing descriptive text
+
+For some good examples, check out the [w3schools tutorial on descriptive text](https://www.w3schools.com/accessibility/accessibility_image_text.php). But remember some of the following things:
+- > The value of the alt attribute should describe the image, or even better: the intention of the image
+- > Imagine you were to explain a web page over a phone call with a friend, what would you say about an image?
+- If zooming in on an image would reveal more info, consider adding it to the alt text
+- If an icon has a meaning (e.g. "gold member"), write that meaning (e.g. "Gold member")
+
+
+## Links
+### States
+> A visited state can help a person with short-term memory loss to understand which content has been read. A hover state can help a person with reduced muscle control to know when to click. A focused link helps keyboard users to know which link they are about to activate.
+
+Three tips are described on w3schools:
+- Removing the underline is almost always a bad idea ([click here to scroll up to the section on colour](#colour))
+- Contrast and focus
+    - The focussed state must sufficiently contrast the unfocussed state
+    - The outline (viewable when using tab navigation) must not obstruct the text. Use `outline-color` & `outline-offset`
+- Make hover very clear. Consider adding (for example) bold text on hover
+
+*(The following two gifs and theur alt text are also adapted from w3schools)*
+![Animated image showing a subtle hover effect for a navigation tree through a change in colour](/assets/notes/hover-with-colour.gif)
+![Animated image showing an improved hover effect for a navigation three through additionally to the change in colour, making the text bold](/assets/notes/hover-with-colour-and-bold.gif)
+
+### Accessible link text
+- Makes sense without any context
+- Explains clearly what the reader will get by clicking
+
+Bad links --> good links examples adapted from w3schools
+- [Click here]() --> [Find out more about the HTML language]()
+- [Read more]() --> Read more about [how to get healthy]()
+- Buy tickets to Fall Out Boy [here]() --> [Buy tickets to Fall Out Boy here]()
+
+Tip: write your links under eachother and see if it make sense
+- Donate
+- Read more
+- Visit the eshop
+
+The *read more* can be replaced. On the Red Cross blog site example, it gets replaced with "Law & Policy"
+
+
+## Headings
+- Don't skip headings because of styling reasons: use them sequentially, and change the style with css
+- If the design doesn't call for a header, still make one and position it off-screen
+
+### Hidden headings and/or content
+Common practice: `sr-only` class
+```css
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+```
+
+Example:
+```html
+<h2 class="sr-only">Headlines</h2>
+```
+
+## Focus
+Do *not* remove or hide focus.
+> We have two options. Leave it or customize it. Removing it is not an option.
+- Do not use `outline: 0;`
+- Be careful with parent divs with `overflow: hidden;`
+
+Two options
+- Default focus: familiar for the user, no coding needed for you
+- Customise visual focus: may be needed if default focus has low contrast with your website, or can be used to align better with the site's colour palette
+
+
+
+
+## (Appendix) Assistive technologies
+- People with hand tremors/not able to grip a mouse --> Keyboard navigation
+- People with mobility disabilities --> Voice control, eye tracking, switch devices
+- People who are blind --> Screen readers, braille displays, speech recognition
+- People with low vision --> Screen magnification
+
+Thanks to standard methods we don't need to code for specific technologies, and it'll be accessible for all
+
+Important things to additionally note:
+- Keyboards are also used on mobile devices (thus stuff like keyboard focus remains important)
