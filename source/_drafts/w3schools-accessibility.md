@@ -13,9 +13,13 @@ Highly condensed notes for [the accessibility course on the w3schools website](h
 - [W3Schools' tutorial on semantic elements](https://www.w3schools.com/accessibility/accessibility_semantic_elements.php)
 - [W3Schools' tutorial on landmarks](https://www.w3schools.com/accessibility/accessibility_landmarks.php)
 - [W3Schools' tutorial on (not relying on) colours](https://www.w3schools.com/accessibility/accessibility_color_meaning.php)
-- [W3schools' tutorial on writing descriptive image text](https://www.w3schools.com/accessibility/accessibility_image_text.php)
+- [W3Schools' tutorial on writing descriptive image text](https://www.w3schools.com/accessibility/accessibility_image_text.php)
 - [The Youtube video by Rob Dodson at Google, displaying the importance of headers](https://www.youtube.com/watch?v=vAAzdi1xuUY)
 - [W3Schools' tutorial on visual focus](https://www.w3schools.com/accessibility/accessibility_visual_focus.php)
+- [W3Schools' walkthrough of a screen reader UX](https://www.w3schools.com/accessibility/accessibility_screen_readers.php)
+
+## Testing accessibility
+- Screen readers: NVDA
 
 ## Elements
 - `section` is not related to content in `main`
@@ -23,7 +27,10 @@ Highly condensed notes for [the accessibility course on the w3schools website](h
 - An `aside` is still connected to `main`'s content 
     - Aria-label & use case example: share this page
 - `div` and `span` elements say nothing about the content. Only use these if no other option makes sense
-- `a` links should usually **not** open in a new tab or window. If it does, make the user aware of this behaviour and ensure you do it with a good reason (like highlighted [here on Adrian Roselli's blog](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html#Exceptions), which fully details why new tab/window behaviour is not advisable)
+- `a` links should usually **not** open in a new tab or window. If it does, make the user aware of this behaviour and ensure you do it with a good reason (like highlighted [on the link targets article on Adrian Roselli's blog](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html#Exceptions), which fully details why new tab/window behaviour is not advisable)
+- If you have multiple `nav` elements, use `aria-label` to clearly communicate differences (e.g. `aria-label="main"`)
+- `button` elements that (for example) open a modal or a hamburger ùenu, should have an `aria-label` (e.g. `aria-label="Enter zip code to find a dealer nearby"` or `aria-label="Open menu"` respectively)
+- If two buttons are made for the same function (e.g. a text button and a icon button to open the same modal), they should be merged into one element
 
 ## Skip link
 Allows the user to quickly go to the most important part of the page. Test it out by pressing tab on [WebAIM's website](https://webaim.org/)
@@ -58,6 +65,7 @@ If you cannot use elements semantically (technical limitations, framework...):
     - `"button"`
 - `"aria-label"`: accessible/clear name for the control
     - `name` attribute is *not* enough: this is used for computer code, not human consumption
+    - Aria-label should thus be written for people, without e.g. hyphens
     - Slightly edited example from w3schools: 
         ```html 
             <select name="countryCode" aria-label="Country calling code">…</select>
@@ -97,7 +105,8 @@ While the [website for inclusive design principles](https://inclusivedesignprinc
 - Use `text-underline-offset` and `text-decoration-color` for improved readability
     Example from w3schools:
     ![A screenshot form the wikipedia article on colour blindness. The CSS has been modified so that the distinctive blue links are decorated using a soft grey line a few pixels below it](/assets/notes/img_wikipedia_underline_improved.png)
-
+- If using (for example) a logo as a link, add an `aria-label`, (e.g. `aria-label="Toyota front page"`)
+- Stip down accessible names on links & buttons, remove `go to`/`page`. For example, `aria-label="Global distributors"` is enough
 
 ## Images: decorative vs meaningful
 > Can you remove it with no impact? Then it is a decorative image.
@@ -181,6 +190,8 @@ Example:
 <h2 class="sr-only">Headlines</h2>
 ```
 
+*Note: a hidden heading could be redundant if a `<title>` element contains the same content/fulfills the same purpose*
+
 ## Focus
 Do *not* remove or hide focus.
 > We have two options. Leave it or customize it. Removing it is not an option.
@@ -194,7 +205,7 @@ Two options
 
 
 
-## (Appendix) Assistive technologies
+## (Appendix) Assistive technologies and those that use them
 - People with hand tremors/not able to grip a mouse --> Keyboard navigation
 - People with mobility disabilities --> Voice control, eye tracking, switch devices
 - People who are blind --> Screen readers, braille displays, speech recognition
