@@ -202,7 +202,42 @@ Two options
 - Default focus: familiar for the user, no coding needed for you
 - Customise visual focus: may be needed if default focus has low contrast with your website, or can be used to align better with the site's colour palette
 
+## Forms
+### `<label>`
+- Read out loud by screen-reader on input focus
+- Allows easier clicking on checkbox/radio button
+- Ensure that `for="input-id"` 
 
+
+### Required fields
+- Form labels often contain `*` or `required`
+- But make sure to also set `required` *and* `aria-required="true"`
+
+### aria-label
+- > Fields without visual labels still need a label
+- Do not rely on placeholder, as these are not valid accessible names
+- Use `aria-label`, e.g. `aria-label="Enter search term"`
+
+### `<legend>`
+- Sometimes a "higher" level label is needed (e.g. date of birth)
+- Visually `Day`, `Month` and `Year` labels make sense, but this may not be the case for a screenreader
+- Use `<fieldset>` and `<legend>`
+
+Example from w3schools:
+
+![A screenshot of a form. The top label says "Your date of birth*". Under it you see three label and input combinations for Day, Month and Year respectively](/assets/notes/img_fieldset_example.png)
+```html
+
+<fieldset>
+  <legend>Your date of birth</legend>
+  <label for="dobDay">Day</label>
+  <select id="dobDay">…</select>
+  <label for="dobMonth">Month</label>
+  <select id="dobMonth">…</select>
+  <label for="dobYear">Year</label>
+  <input id="dobYear" type="text" placeholder="YYYY">
+</fieldset>
+```
 
 
 ## (Appendix) Assistive technologies and those that use them
