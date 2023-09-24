@@ -104,7 +104,7 @@ While the [website for inclusive design principles](https://inclusivedesignprinc
 ## Links
 - Use `text-underline-offset` and `text-decoration-color` for improved readability
     Example from w3schools:
-    ![A screenshot form the wikipedia article on colour blindness. The CSS has been modified so that the distinctive blue links are decorated using a soft grey line a few pixels below it](/assets/notes/img_wikipedia_underline_improved.png)
+    ![A screenshot from the wikipedia article on colour blindness. The CSS has been modified so that the distinctive blue links are decorated using a soft grey line a few pixels below it](/assets/notes/img_wikipedia_underline_improved.png)
 - If using (for example) a logo as a link, add an `aria-label`, (e.g. `aria-label="Toyota front page"`)
 - Stip down accessible names on links & buttons, remove `go to`/`page`. For example, `aria-label="Global distributors"` is enough
 
