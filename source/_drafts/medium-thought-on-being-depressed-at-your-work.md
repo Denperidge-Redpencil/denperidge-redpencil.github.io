@@ -11,8 +11,8 @@ tags:
 
 Truthfully, I'm not entirely sure if the current blog I'm writing it on has any readers, let alone if it will. Maybe the text might be properly edited and published down the road, who knows. Get ready for me to get horridly personal about the experience of having a job.
 
-- [Part 1: cause](#part-1-cause-you-or-well-me)
-- [Part 2: consequence](#part-2-consequence-how-it-affects-your-mine-work)
+- [Part 1: cause](#part-1-cause)
+- [Part 2: consequence](#part-2-consequence)
 - [Part 3: solution]()
 
 
@@ -66,3 +66,21 @@ Now, you can imagine that if you are barely able to talk to anyone (let alone th
 
 ## Part 3: solution
 Or, `How you (me) and your (my) employers are minimising the aftermaths`
+
+I've been granted the ability to have flexible hours. I try to still be on time for any meetings I'm expected
+
+## Part 2: consequence
+Or, `a disservice`
+
+The above ignores one of my hardest symptoms is a bit of a wildcard. It does a disservice to how much stress has an effect on me. I wish I was exaggerating when I say that it has caused me to need to go to professionals. One condition I accrued during college was one that "only appears on people undergoing chemo-therapy or 60 years and older". At the time I was still eating consistently and healthy and everything. As of most recent, a different condition of which the strongest effect of it had laid dormant for over a *decade* has flared up again, causing a span of 3 days where I consistently could barely breathe or move.
+
+So what do you do? Not work to avoid stress?
+
+I'm a perfectionist. One that likes to do all their work to get an empty queue. But this is impossible. As a programmer, code could always be optimised and new technologies always used. As an "artist", one word or frequency can always be changed. As an adult, there is always a chore to do. Even if I did not need to work to survive, I would go crazy from not working or creating in some capacity.
+
+
+## Part 3: solution
+Or, `try?`
+
+My life is currently a bit of a juggling act. A meditation technique ~~that I swear I learned from a book and not a way more comparatively asinine location~~ that I use symbolises your brain as an anxious kitten to guide ~~no jokes about my name here~~. Contextualising that in my work-health balance, it is currently guiding my mind into work to get things done, and then guiding it away so I don't overtly stress.
+
