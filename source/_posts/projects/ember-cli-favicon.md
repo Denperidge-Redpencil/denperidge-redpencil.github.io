@@ -9,7 +9,7 @@ tags: Ember
 aka how to ruin your life by trying to put your favicon in a subdirectory
 
 Related projects:
-- [my ember-cli-favicon fork](https://github.com/Denperidge-Redpencil/ember-cli-favicon)
+- [My ember-cli-favicon fork on GitHub](https://github.com/Denperidge-Redpencil/ember-cli-favicon)
 - [semantic.works rework repository on GitHub](https://github.com/Denperidge-Redpencil/semantic.works)
 - [app-mu-info-rework repository on GitHub](https://github.com/Denperidge-Redpencil/app-mu-info-rework)
 
@@ -17,9 +17,11 @@ Related projects:
 
 So, one of the things I wanted to fix in the semantic.works rework was the lack of a favicon.
 
-Now, you may say 
-> oh simple, convert to an .ico and add a head tag
-, but this is not entirely accurate. PWA's and pinning websites onto your browser ha necessitated multiple favicon definitions as well as files. "apple-touch-\*", "android-chrome-\*", fun fun. 
+Now, you may say
+
+> oh simple, convert to an .ico and add a head tag!
+
+But this is not entirely accurate. PWA's and pinning websites onto your browser ha necessitated multiple favicon definitions as well as files. "apple-touch-\*", "android-chrome-\*", fun fun. 
 
 Now, you could use an online generator, but then you have to manually update it if the logo changes.
 
