@@ -10,8 +10,7 @@ tags:
 
 This is the second time writing this, as I did not commit and instead removed the original. It hurts.
 
-
-*Note: the commits listed are of the initial imports, and the final product may differ. For the final product, see *
+*Note: the commits listed are of the initial imports, and the final product may differ. For the final product, see [github.com/Denperidge-Redpencil/du-project](https://github.com/Denperidge-Redpencil/du-project)*
 
 ## 01: How and why (pt1 & 2)
 These contained the design philosophy of semantic.works! I added this in the following format:
@@ -27,10 +26,29 @@ Information about possible/future expansions for semantic.works. A nice watch, b
 
 Related commit: N/A
 
-## 02: A shared foundation
+## 02: A shared foundation (pt1)
 The beginning of this video is a quick overview of Docker Compose, which is not imported.
 
 Afterwards, however, the information about services as well as how to add it into the project is given and imported.
 
 Related commit: [c57348f8c09ec2062f951f915da85d1408f05050@github.com/Denperidge-Redpencil/du-project](https://github.com/Denperidge-Redpencil/du-project/commit/c57348f8c09ec2062f951f915da85d1408f05050)
 
+## 02: A shared foundation (pt2)
+This video explains linked data and writing turtle. While eventually a written introduction in the semantic.works docucmentation should be made or linked, it is out of the scope for the current import.
+
+Related commit: N/A
+
+## 02: A shared foundation (pt3)
+This video explains Ember.js, and has the same problem as pt2.
+
+However, it should be noted that in the beginning Aad opens this one by saying "The hamster" and that made me very happy.
+
+Related commit: N/A
+
+
+
+## Extra notes
+We should make and/or link (a) tutorial(s) for the following things:
+- Docker & Docker Compose
+- Linked data & SPARQL
+- Ember.js
