@@ -9,3 +9,6 @@ This way, it can double as an overview for colleauges and myself, as well as a s
 
 Enjoy the show!
 
+
+## Project overview
+![An overview of my documentation rework efforts](/assets/documentation-rework.excalidraw.svg)
