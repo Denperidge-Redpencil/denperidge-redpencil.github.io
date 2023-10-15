@@ -45,7 +45,11 @@ However, it should be noted that in the beginning Aad opens this one by saying "
 
 Related commit: N/A
 
+## 03: Docker for real (pt1-3)
+This video series explains Docker, and has the same problem as A shared foundation pt2-3 
 
+## 04: Templates and conventions
+FILLED with information! Templates was expanded, the applications category added, and a bunch of naming conventions written down, including of the docker-compose files!
 
 ## Extra notes
 We should make and/or link (a) tutorial(s) for the following things:
