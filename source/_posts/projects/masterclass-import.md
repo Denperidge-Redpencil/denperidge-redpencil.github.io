@@ -1,8 +1,8 @@
 ---
-title: 'Project creation: masterclass-import'
+title: 'Project creation: masterclass-import @ du-project'
 categories:
   - I've made stuff apparently
-date: 2023-10-14 19:50:30
+date: 2023-10-15 19:12:30
 tags:
   - Documentation
   - Semantic.works
@@ -51,8 +51,35 @@ This video series explains Docker, and has the same problem as A shared foundati
 ## 04: Templates and conventions
 FILLED with information! Templates was expanded, the applications category added, and a bunch of naming conventions written down, including of the docker-compose files!
 
+Related commit: [fee309f545f22f01866c5532e8762799cd1b284d@github.com/Denperidge-Redpencil/du-project](https://github.com/Denperidge-Redpencil/du-project/commit/fee309f545f22f01866c5532e8762799cd1b284d)
+
+
+## 05: Common microservices (pt1-2)
+This part highlights the importance of identifier, dispatcher and virtuoso. This has been put into a quickstart how-tos/creating-applications. Some information (like the info about accept headers) and extra configuration options for dispatcher have not been imported, as to keep the how-to to the point.
+
+Related commit: [5a637878d108af7e761e2b50d4ed701312093975@github.com/Denperidge-Redpencil/du-project](https://github.com/Denperidge-Redpencil/du-project/commit/5a637878d108af7e761e2b50d4ed701312093975)
+
+## 05: Common microservices (pt3)
+This part mostly talks about implementing mu-cl-resources. It has been added in the form of linking to the documentation.
+
+Related commit: [5a637878d108af7e761e2b50d4ed701312093975@github.com/Denperidge-Redpencil/du-project](https://github.com/Denperidge-Redpencil/du-project/commit/5a637878d108af7e761e2b50d4ed701312093975)
+
+## 05: Common microservices (pt4)
+This is about the file service, login services... and documentation generation. I sent a message to check the up-to-dateness of the documentation generator, but aside from that, nothing was imported due to a grander amount of specificity.
+
+Related commit: N/A
+
+## 06: Intro virtuoso and sparql + 07: SPARQLing
+These are tutorials for using virtuoso and SPARQL, and thus are out of scope for the current import.
+
+Related commit: N/A
+
 ## Extra notes
 We should make and/or link (a) tutorial(s) for the following things:
 - Docker & Docker Compose
 - Linked data & SPARQL
 - Ember.js
+- Accept headers
+
+## That's it for now!
+Now, onto the next step: polishing, refactoring, and deprecating!
