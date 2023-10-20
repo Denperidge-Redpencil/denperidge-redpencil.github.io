@@ -1,6 +1,6 @@
 ---
 title: Notes from the accessibility course on W3Schools
-#date: 2023-09-07 18:07:44
+date: 2023-10-20 15:24:30
 categories:
     - I make notes
 tags:
@@ -18,6 +18,7 @@ Highly condensed notes for [the accessibility course on the w3schools website](h
 - [W3Schools' tutorial on visual focus](https://www.w3schools.com/accessibility/accessibility_visual_focus.php)
 - [W3Schools' walkthrough of a screen reader UX](https://www.w3schools.com/accessibility/accessibility_screen_readers.php)
 - [W3Schools' walkthrough on improving text zoom](https://www.w3schools.com/accessibility/accessibility_text_size.php)
+- [W3Schools' walkthrough on improving page zoom](https://www.w3schools.com/accessibility/accessibility_page_zoom.php)
 
 
 ## Testing accessibility
@@ -297,6 +298,27 @@ Some people need larger text to perceive letters
 
 ### With rem font-size, line-height, and with height and -webkit-line-clamp: 3 removed
 ![A screenshot of the LG India web page, but with the browser setting on 40px font-size, as well as the css now using a rem unit font-size, line-height being set to 1.2 instead of using a px unit, the absolute height removed, as well as the three line limit being removed. The text is now larger, properly spaced and no longer clipping](/assets/notes/img_lg_rem_line_height_no_height.png)
+
+## Zoom - Page
+
+Ensure that...
+- Horizontal scrolling is avoided
+- All content is available (not clipped, truncated or obscured)
+- All functionality is available
+- Avoid text in images
+- Provide space for key content
+
+> Page zoom often triggers mobile view on responsive sites, which is good.
+
+Note: the examples provided on the [W3Schools Page Zoom Accessibility page](https://www.w3schools.com/accessibility/accessibility_page_zoom.php) are great illustrations as to the importance of supporting page zoom, but there is barely any way to condense them. Below will be a general list of tips for reference, but I highly advice checking out the page.
+
+- Set viewport (`<meta name="viewport" content="width=device-width, initial-scale=1">`)
+- Make the site responsive
+- Minimize buttons for other features (e.g. chat, cookie consent). Use minimized as default where possible
+- Vector graphics/SVG > raster graphics/PNG
+- Avoid text in images. When zoomed, it gets pixelated, clips out of the browser window/view (requiring (horizontal) scrolling to read it all) *and* is not translatable nor searchable
+- Ensure mobile ads only appear on mobile *devices*
+- When using position fixed/sticky, ensure it doesn't cover content when zoomed
 
 
 
