@@ -17,6 +17,8 @@ Highly condensed notes for [the accessibility course on the w3schools website](h
 - [The Youtube video by Rob Dodson at Google, displaying the importance of headers](https://www.youtube.com/watch?v=vAAzdi1xuUY)
 - [W3Schools' tutorial on visual focus](https://www.w3schools.com/accessibility/accessibility_visual_focus.php)
 - [W3Schools' walkthrough of a screen reader UX](https://www.w3schools.com/accessibility/accessibility_screen_readers.php)
+- [W3Schools' walkthrough on improving text zoom](https://www.w3schools.com/accessibility/accessibility_text_size.php)
+
 
 ## Testing accessibility
 - Screen readers: NVDA
@@ -238,6 +240,64 @@ Example from w3schools:
   <input id="dobYear" type="text" placeholder="YYYY">
 </fieldset>
 ```
+
+## Autocomplete
+> This is convenient for everybody. This is very helpful for user with motor impairments or cognitive disabilities. 
+
+Example autocomplete attributes:
+```html
+<input
+    autocomplete="email"
+    autocomplete="bday-day"
+    autocomplete="bday-month"
+    autocomplete="bday-year"
+/>
+```
+
+## Errors
+Errors have to be perceivable & understandable to people who are colour blind, blind or low visioned, or who have limied cognitive abilities.
+
+Accessible error messages:
+- Written in *text*. Color & icons can be used, but not alone. Ideally:
+    - Written in text
+    - Warning icon
+    - Red border
+- *Close* to the element that has failed
+    - > Design elements near each other are perceived as related, while elements spaced apart are perceived as belonging to separate groups.
+        - Nielsen Norman Group, [Proximity Principe in Visual Design](https://www.nngroup.com/articles/gestalt-proximity/)
+    - Errors close to failing fields
+    - Big margin between fields
+- Informative, helping the user
+    - The more informative and precise, the better
+    - Ask the users if they udnerstand what is wrong. If not, write the error more precise
+- *Associated* to the failed element *in the code*
+    ```html
+    <!-- Add aria-invalid="true" once the the form control fails -->
+    <input name="firstName" id="firstNameInput" type="text" pattern="[^.]*?" aria-describedby="firstName-length-error" aria-invalid="true">
+    <p id="firstName-length-error" role="alert">Your first name must have at least two letters and no unusual characters</p>
+    <!-- role="alert" makes the screen reader read the content, even if it's not in focus -->
+    ```
+Aside note: when the user submits a form, the focus moves to the first invalid field
+
+## Zoom - Text Size
+Some people need larger text to perceive letters
+
+- `font-size`: Use `rem`; you can convert `px` to it
+- `line-height`: avoid using absolute units. For example, use `1.2;` instead of `22px;` 
+- `height`: avoid using absolute heights (e.g. `66px;`), and instead letting line-height & font-size run
+
+### Original
+![A screenshot of the LG India web page. With the exception of the price, all text is 18px. The before-discount price is large, but the discount amount & percent are smaller than the default text](/assets/notes/img_lg_original.png)
+
+### Original, zoomed in
+![A screenshot of the LG India web page, but with a browser which has a 40px font-size. With the exception of the review star amount text moving down a few pixels, it looks exactly the same as before setting the browser text size](/assets/notes/img_lg_original_zoomed.png)
+
+### With rem font-size
+![A screenshot of the LG India web page, but with the browser setting on 40px font-size, as well as the css now using a rem unit font-size. The text is considerably bigger now, but its cut off on overflow and squished together](/assets/notes/img_lg_rem.png)
+
+### With rem font-size, line-height, and with height and -webkit-line-clamp: 3 removed
+![A screenshot of the LG India web page, but with the browser setting on 40px font-size, as well as the css now using a rem unit font-size, line-height being set to 1.2 instead of using a px unit, the absolute height removed, as well as the three line limit being removed. The text is now larger, properly spaced and no longer clipping](/assets/notes/img_lg_rem_line_height_no_height.png)
+
 
 
 ## (Appendix) Assistive technologies and those that use them
